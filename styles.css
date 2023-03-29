@@ -2,7 +2,41 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.container {
-    max-width: 600px;
+canvas {
+    border: 1px solid #000;
+}
+
+.canvas-container {
+    position: relative;
+    width: 660px;
     margin: 0 auto;
+}
+
+.left-btn, .right-btn, .top-btn, .bottom-btn {
+    position: absolute;
+    font-size: 48px; /* Adjust the size of the buttons */
+}
+
+.left-btn {
+    left: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.right-btn {
+    right: -60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.top-btn {
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.bottom-btn {
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
 }
